@@ -1,16 +1,17 @@
 import "./App.css";
 
-function App() {
+export default function AppJSX01() {
   const name = "Dell";
+  const list = ["Milk", "Orange", "Banana", "apple"];
   return (
     <>
-      <h1 className="orange">Hello!</h1>
+      <h1 className="orange">{`Hello! ${name}`}</h1>
       <h2>Hello!!</h2>
-      <p>My name is {name}</p>
+      <p>{name}</p>
       <ul>
-        <li>우유</li>
-        <li>딸기</li>
-        <li>바나나</li>
+        {list.map((item) => (
+          <li>{item}</li>
+        ))}
       </ul>
       <img
         style={{ height: "200px" }}
@@ -20,5 +21,3 @@ function App() {
     </>
   );
 }
-
-export default App;
