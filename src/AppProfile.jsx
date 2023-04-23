@@ -2,7 +2,7 @@ import "./App.css";
 import Avatar from "./components/Avatar";
 import Profile from "./components/Profile";
 
-export default function AppProfile02() {
+export default function AppProfile() {
   const handleClick = (event) => {
     console.log(event);
     alert("출력됨");

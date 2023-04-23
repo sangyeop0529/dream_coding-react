@@ -1,6 +1,6 @@
 import "./App.css";
 
-export default function AppJSX01() {
+export default function AppJSX() {
   const name = "Dell";
   const list = ["Milk", "Orange", "Banana", "apple"];
   return (
@@ -9,8 +9,8 @@ export default function AppJSX01() {
       <h2>Hello!!</h2>
       <p>{name}</p>
       <ul>
-        {list.map((item) => (
-          <li>{item}</li>
+        {list.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
       <img
